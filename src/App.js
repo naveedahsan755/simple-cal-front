@@ -32,9 +32,10 @@ function App() {
   };
 
   const calcResult = async () => {
+    let res = 0;
     switch (op) {
       case "P":
-        const res = await axios.post(
+        res = await axios.post(
           "https://simple-cal-back.herokuapp.com/api/perc",
           {
             op1,
@@ -49,7 +50,7 @@ function App() {
         break;
 
       case "+":
-        const res = await axios.post(
+        res = await axios.post(
           "https://simple-cal-back.herokuapp.com/api/add",
           {
             op1,
@@ -64,7 +65,7 @@ function App() {
         break;
 
       case "-":
-        const res = await axios.post(
+        res = await axios.post(
           "https://simple-cal-back.herokuapp.com/api/sub",
           {
             op1,
@@ -79,7 +80,7 @@ function App() {
         break;
 
       case "*":
-        const res = await axios.post(
+        res = await axios.post(
           "https://simple-cal-back.herokuapp.com/api/mul",
           {
             op1,
@@ -94,7 +95,7 @@ function App() {
         break;
 
       case "/":
-        const res = await axios.post(
+        res = await axios.post(
           "https://simple-cal-back.herokuapp.com/api/div",
           {
             op1,
