@@ -11,6 +11,7 @@ p {
   padding: 0.5rem;
   text-align: right;
   border: 1px solid #777;
+  overflow: hidden;
 }
 
 button {
