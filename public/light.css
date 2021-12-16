@@ -1,0 +1,56 @@
+body {
+  background-color: #333;
+}
+
+h1,
+p {
+  color: #eee !important;
+}
+
+.disp-box {
+  padding: 0.5rem;
+  text-align: right;
+  border: 1px solid #777;
+}
+
+button {
+  background-color: #eee !important;
+  color: #333 !important;
+  border: 1px solid #777 !important;
+  width: 100%;
+}
+
+button:hover {
+  color: #eee !important;
+  background-color: #333 !important;
+}
+
+@media (max-width: 2300px) {
+  .box {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 1480px) {
+  .box {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .box {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .box {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    width: 100% !important;
+  }
+}
