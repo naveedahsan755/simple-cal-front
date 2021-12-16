@@ -41,12 +41,69 @@ function App() {
             op2,
           }
         );
-        console.log(res);
+
+        setResult(res.data.data);
+        setOp(null);
+        setOp1(null);
+        setOp2(null);
         break;
 
       case "+":
-        alert(op2);
-        setResult(+op1 + +op2);
+        const res = await axios.post(
+          "https://simple-cal-back.herokuapp.com/api/add",
+          {
+            op1,
+            op2,
+          }
+        );
+
+        setResult(res.data.data);
+        setOp(null);
+        setOp1(null);
+        setOp2(null);
+        break;
+
+      case "-":
+        const res = await axios.post(
+          "https://simple-cal-back.herokuapp.com/api/sub",
+          {
+            op1,
+            op2,
+          }
+        );
+
+        setResult(res.data.data);
+        setOp(null);
+        setOp1(null);
+        setOp2(null);
+        break;
+
+      case "*":
+        const res = await axios.post(
+          "https://simple-cal-back.herokuapp.com/api/mul",
+          {
+            op1,
+            op2,
+          }
+        );
+
+        setResult(res.data.data);
+        setOp(null);
+        setOp1(null);
+        setOp2(null);
+        break;
+
+      case "/":
+        const res = await axios.post(
+          "https://simple-cal-back.herokuapp.com/api/div",
+          {
+            op1,
+            op2,
+          }
+        );
+
+        setResult(res.data.data);
+        setOp(null);
         setOp1(null);
         setOp2(null);
         break;
